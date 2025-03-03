@@ -1,0 +1,263 @@
+*{
+    border: 1px solid white;
+}
+hr{
+    border: 1px solid white;
+    width: 40%;
+    margin-top: 10px;
+}
+nav {
+    width: 100%;
+    padding: 20px;
+
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+nav li {
+    margin: 0 100px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    padding: 10px 16px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+nav a:hover {
+    
+    background-color: rgba(255, 255, 255, 0.2);
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    text-decoration: underline;
+    transform: scale(1.1);
+
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    font-family: sans-serif;
+
+}
+
+header{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+
+#titolo{
+    color: white;
+    padding: 0px;
+    font-size: 100px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    animation: ombre-titolo ease-in-out 30s infinite;
+}
+
+@keyframes ombre-titolo{
+        0% {
+          text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.8);
+        }
+        12.5% {
+          text-shadow: 1px 1px 7px rgba(210, 210, 210, 0.7);
+        }
+        25% {
+          text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+        }
+        37.5% {
+          text-shadow: 1px 1px 7px rgba(60, 60, 60, 0.3);
+        }
+        50% {
+          text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.2);
+        }
+        62.5% {
+          text-shadow: 1px 1px 7px rgba(60, 60, 60, 0.3);
+        }
+        75% {
+          text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.4);
+        }
+        87.5% {
+          text-shadow: 1px 1px 7px rgba(210, 210, 210, 0.7);
+        }
+        100% {
+          text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+}
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+/* Game Board ( mettere i colori )                                  1       */
+#game-board{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 50px;
+    border: none;
+    min-width: 750px;
+
+}
+/* Color Picker ( mettere i colori )                                2       */
+#color-picker {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    margin: 20px;
+    margin-bottom: 30px;
+    border-radius: 60px;
+    position: fixed;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    animation: animazione 5s infinite;
+    min-width: 750px;
+
+
+}
+
+
+@keyframes animazione {
+    0% { box-shadow: 0 0 15px rgb(255, 0, 0); }
+    25% { box-shadow: 0 0 15px rgb(255, 165, 0); }
+    50% { box-shadow: 0 0 15px rgb(255, 255, 0); }
+    75% { box-shadow: 0 0 15px rgb(0, 255, 0); }
+    100% { box-shadow: 0 0 15px rgb(255, 0, 0); }
+}
+
+
+
+/* Tabelle */
+#tabella1{
+    border-spacing: 30px;
+ 
+}
+
+#tabella2{
+  
+    border-spacing: 10px; 
+
+}
+
+
+
+table {
+    border: none;
+}
+
+
+#tabella1 td{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    padding: 0;
+}
+
+td {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 0;
+    border-spacing: 10px; 
+    border: 2px solid white;
+}
+
+/* Colori celle */
+#rosso { background-color: red; }
+#verde { background-color: green; }
+#blu { background-color: blue; }
+#giallo { background-color: yellow; }
+#arancione { background-color: orange; }
+#viola { background-color: purple; }
+#marrone { background-color: brown; }
+#rosa { background-color: pink; }
+#bianco { background-color: white; }
+
+label{
+    color: white;
+    position: fixed;
+    bottom: 150px;
+    font-size: 20px;
+
+
+
+}
+
+
+
+/* Telefono */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    #titolo {
+        font-size: 50px;
+        text-align: center;
+    }
+}
+
+
+/* Tablet */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    nav li {
+        margin: 0 50px;
+    }
+
+    #titolo {
+        font-size: 80px;
+    }
+}
+
+/* iPad */
+@media screen and (min-width: 1025px) and (max-width: 1200px) {
+    nav li {
+        margin: 0 50px;
+    }
+
+    #titolo {
+        font-size: 80px;
+    }
+}
