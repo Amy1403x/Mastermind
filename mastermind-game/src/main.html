@@ -1,215 +1,193 @@
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    
-    <link href="css/style.css" rel="stylesheet">
-
+    <title>Mastermind, da Amedeo</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <!-- negraccioooooo -->
-    <nav>
-        <ul>
-            <li><a href="https://www.wikihow.it/Giocare-a-Mastermind" id="regole">Regole</a></li>            
-            <li><a href="https://it.wikipedia.org/wiki/Mastermind" id="info">Info</a></li>
-            <li><a href="https://www.tiktok.com/@amy.1403x" id="creatore">Chi sono?</a></li>
-
-        </ul>
-    </nav>
-
-    <hr>
-
     <!-- Header -->
-    <header>
-        <h1 id="titolo">Mastermind</h1>
-        <h4 id="trademark">by Amy1403x.</h4>
+    <header id="main-header" class="site-header">
+
+        <!-- Container -->
+        <div class="container">
+            <div class="site-branding">
+                <span class="site-title">Mastermind</span>
+            </div>
+
+            <!-- Navigation -->
+            <nav id="main-nav" class="main-navigation">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Come Giocare</a>
+                        <a href="#" class="nav-link">Amedeo Social</a>
+                    </li>
+                </ul> 
+            </nav>
+        </div>
     </header>
 
-    
 
-    <!-- Main 2 tabelle -->
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+        <div class="container"> 
+            <h1 class="hero-title">Indovina la Sequenza</h1> 
+            <p class="hero-subtitle">Gioca solamente se hai un IQ > 10 </p> 
+            <a href="#game-board" id="cta-play-hero" class="btn btn-primary btn-lg rounded-pill">Gioca a mm</a>
+        </div>
+    </section>
 
-    <main>
-
-        <!-- Tabella 1 -->
-        <div id="game-board">
-            <table id="tabella1">
+    <!-- Game Board -->
+    <section id="game-board" class="game-board-section">
+        <!-- Game Board Palette -->
+        <div class="palette"></div>
+            <table>
                 <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="cella"></td>
-                    <td class="feedback">
-                        <div class="feedback-container">
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                            <div class="feedback-dot"></div>
-                        </div>
-                    </td>
+                    <td><button class="pallino" style="background-color: red;"></button></td>
+                    <td><button class="pallino" style="background-color: blue;"></button></td>
+                    <td><button class="pallino" style="background-color: green;"></button></td>
+                    <td><button class="pallino" style="background-color: yellow;"></button></td>
+                    <td><button class="pallino" style="background-color: white;"></button></td>
+                    <td><button class="pallino" style="background-color: black;"></button></td>
                 </tr>
             </table>
         </div>
-        
-        <!-- Tabella 2 -->
-         <label for="color-picker">Trascina il colore:</label>
-        <div id="color-picker">
-            <table id="tabella2">
+        <!-- Game Board Input -->
+        <div class="board">
+            <table>
                 <tr>
-                    <td class="cella" id="rosso" draggable="true"></td>
-                    <td class="cella" id="verde" draggable="true"></td>
-                    <td class="cella" id="blu" draggable="true"></td>
-                    <td class="cella" id="giallo" draggable="true"></td>
-                    <td class="cella" id="arancione" draggable="true"></td>
-                    <td class="cella" id="viola" draggable="true"></td>
-                    <td class="cella" id="marrone" draggable="true"></td>
-                    <td class="cella" id="rosa" draggable="true"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
+                </tr>
+                <tr>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
+                </tr>
+                <tr>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
+                </tr>
+                <tr>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
+                </tr>
+                <tr>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
+                </tr>
+                <tr>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
+                </tr>
+                <tr>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
+                </tr>
+                <tr>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
+                </tr>
+                <tr>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="slot"></td>
+                    <td class="hint"></td>
                 </tr>
             </table>
         </div>
-    </main>
+    </section>
 
+    <!-- Game Controls -->
+    <div class="game-controls">
+        <button id="check-button" class="game-button">Controlla</button>
+        <button id="new-game" class="game-button">Nuova Partita</button>
+    </div>
 
-    <section>
-        <button id="new-game">Nuova Partita</button>
-        <button id="check-combination">Controlla</button>
+    <!-- Game Instructions -->
+    <div class="game-instructions">
+        <h3>Come si gioca:</h3>
+        <p>1. Seleziona un colore dalla palette in alto</p>
+        <p>2. Clicca sugli spazi vuoti per posizionare i colori</p>
+        <p>3. Premi "Controlla" quando hai inserito tutti e 4 i colori</p>
+        <br>
+        <h3>Come leggere i risultati:</h3>
+        <p><span class="result-example">2●</span> = 2 colori sono nella posizione corretta</p>
+        <p><span class="result-example">1○</span> = 1 colore è corretto ma in posizione sbagliata</p>
+        <p>Esempio: Se vedi <strong>2●1○</strong> significa:</p>
+        <ul>
+            <li>2 colori sono nel posto giusto (●)</li>
+            <li>1 colore è giusto ma nel posto sbagliato (○)</li>
+            <li>1 colore è completamente sbagliato</li>
+        </ul>
+    </div>
 
-
+    <!-- Sperimentazione con LLM -->
+    <!-- Features -->
+    <section class="features-section">
+        <div class="container">
+            <!-- Feature -->
+            <div class="feature">
+                <img src="assets/gameplay-image.jpg" alt="Gameplay Mastermind" class="feature-image">
+                <h2>Prova AI con Bootstrap eTailwind</h2>
+                <p>Sfida i tuoi amici o giocatori da tutto il mondo in partite avvincenti di Mastermind, accessibile da qualsiasi dispositivo.</p>
+            </div>
+            <!-- Feature -->
+            <div class="feature">
+                <img src="assets/leaderboard-image.jpg" alt="Classifica Giocatori" class="feature-image">
+                <h2>Boooh</h2>
+                <p>Scala la classifica globale e dimostra di essere il miglior code-breaker. Sfida te stesso per migliorare il tuo punteggio.</p>
+            </div>
+        </div>
     </section>
 
 
-    <section>
+    <!-- Footer -->
+    <footer id="main-footer" class="site-footer">
+        <!-- Container -->
+        <div class="container">
+            <p class="footer-text">
+                &copy; 2025 Mastermind Inc. tutti i diritti NON riservati.
+            </p>
+            <!-- Contact Section -->
+            <div class="contact-section">
+                <h3>Contatti</h3>
+                <p>Email: info@mastermind-game.com</p>
+                <p>Tel: +39 123 456 7890</p>
+                <p>Indirizzo: Via Example 123, 00100 Roma</p>
+            </div>
 
-        <p>testo a caso lunghissimo : </p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
-
-        
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum fringilla pharetra eros, eget dictum dui efficitur at. Donec eget sem vitae enim cursus tempus. Nullam sodales risus sit amet velit gravida, non fringilla diam tristique. Nunc malesuada lacinia justo, vitae mollis enim rutrum in. Suspendisse id neque ac lorem volutpat ullamcorper. Praesent venenatis mauris id diam scelerisque, non tempus enim feugiat. Phasellus tincidunt neque eget purus facilisis, non fermentum nunc aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed euismod, nunc id tempor varius, nunc nisi varius nunc, vitae aliquam nunc nunc vel nunc. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-    </section>
+        </div>
+    </footer>
 
 
 
     <script src="js/script.js"></script>
 </body>
-</html><script src="js/game.js"></script>
+</html>
